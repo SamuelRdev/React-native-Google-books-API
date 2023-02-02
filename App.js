@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import AuthorInput from './components/inputAuthor'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style = {{ marginBottom: 30 }}>Google Book API :</Text>
       <StatusBar style="auto" />
+      <AuthorInput/>
     </View>
   );
 }
@@ -13,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    borderColor: 'aqua',
     alignItems: 'center',
     justifyContent: 'center',
   },
